@@ -6,6 +6,7 @@ type LinkedList = {
   next: LinkedList | null;
 };
 
+// input
 const list = {
   value: 6,
   next: {
@@ -40,10 +41,13 @@ const reverseLinkedList = (linkedList: LinkedList): LinkedList => {
   return reverse(linkedList, null);
 };
 
-console.log("reverseLinkedList(list): ", reverseLinkedList(list));
+const result = reverseLinkedList(list)
+console.log("result: ", result);
 
 
 /*
+output: 
+
 const list = {
   value: 3,
   next: {
